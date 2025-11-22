@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans&display=swap" rel="stylesheet">
+<title>Home</title>
+<style>
+*{margin:0;padding:0;}
+body{
+    font-family:"Nunito Sans",sans-serif;
+    background-image:url("https://southernforests.org/wp-content/uploads/2023/12/website-photos-10.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+header{
+    background:#1e4b22;
+    color:white;
+    padding:20px 5px;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    animation: slideDown 1.2s ease;
+    padding:0 20px;
+}
+@keyframes slideDown {
+    from {transform: translateY(-100px);}
+    to {transform: translateY(0);}
+}
+.heading{
+    font-family:"Marcellus",serif;
+    font-size:5.5vh;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    margin-left:30px;
+}
+nav a:hover{
+    background:white;
+    color:#1e4b22;
+    padding:8px 12px;
+    border-radius:5px;
+    transition:0.3s;
+}
+main{
+    text-align:center;
+    padding:20px 40px;
+    color:white;
+}
+main h1{
+    font-family:"Marcellus",serif;
+    font-size:60px;
+    margin-bottom:40px;
+    margin-top:20px;
+    text-shadow:3px 3px 8px black;
+    animation: slideUp 1.2s ease forwards;
+}
+main p{
+    margin-top:40px;
+    font-size:26px;
+    text-shadow:2px 2px 5px black;
+    max-width:1200px;
+    margin:0 auto 30px auto;
+    animation: slideUp 1.6s ease forwards;
+}
+@keyframes slideUp {
+    from {transform: translateY(40px);opacity:0;}
+    to {transform: translateY(0);opacity:1;}
+}
+.button{
+    margin-top:20px;
+    margin-bottom:10px;
+    border:2px solid black;
+    border-radius:15px;
+    font-size:25px;
+    background:white;
+    color:#1e4b22;
+    padding:18px;
+    animation: fadeIn 2s ease;
+    transition:0.3s;
+}
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+.button:hover{
+    background:#1e4b22;
+    color:white;
+    transform: scale(1.05);
+}
+footer{
+    margin-top:140px;
+    background:#1e4b22;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:16px;
+}
+#pop{
+    font-size:30px;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="heading">Forest Conservation Campaign</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="importance.html">Importance</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sdg.html">Goals</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Protect Our Forests</h1>
+    <p>
+        Forests are the lifeblood of our planet — home to countless species, protectors of our
+        climate, and providers of the clean air and water we depend on every day. Yet these
+        vital ecosystems are disappearing at an alarming rate. Our campaign is dedicated to
+        preserving and restoring forests by inspiring action, raising awareness, and empowering
+        communities to become stewards of nature.
+    </p>
+    <button onclick="popclick()" class="button" id="join">
+        <div id="pop"></div>Join Now!
+    </button>
+</main>
+
+<footer>
+    &copy; 2025 Forest Conservation Campaign. All Rights Reserved.
+</footer>
+
+<script>
+function popclick() {
+    document.getElementById('join').innerHTML = "Successfully Pre-Registered for the Upcoming Event!";
+    document.getElementById('join').style.background = "#1e4b22";
+    document.getElementById('join').style.color = "white";        
+    document.getElementById('join').style.border = "2px solid black";
+    document.getElementById('join').disabled = true;            
+}
+</script>
+</body>
+</html>

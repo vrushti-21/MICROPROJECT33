@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importance - Forest Conservation Campaign</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family:"Nunito Sans", sans-serif;
+            background-image:url("https://southernforests.org/wp-content/uploads/2023/12/website-photos-10.png");
+            background-size:cover;
+            background-repeat:no-repeat;
+            position:relative;
+        }
+
+        body::before{
+            content:"";
+            position:fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background:rgba(0,0,0,0.45);
+            z-index:-1;
+        }
+
+        header{
+            background:#1e4b22;
+            color:white;
+            padding:15px 5px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .heading{
+            font-family:"Marcellus", serif;
+            font-size:5.5vh;
+            animation:fadein 1.3s ease;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            margin-left:30px;
+        }
+
+        nav a:hover{
+            background:white;
+            color:#1e4b22;
+            padding:8px 12px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        main{
+            padding:60px 40px;
+            color:white;
+            text-shadow:2px 2px 6px black;
+            animation:fadein 1.3s ease;
+        }
+
+        .mainimg{
+            display:block;
+            margin:40px auto;
+            max-width:100%; /* responsive */
+            height:auto;    /* maintain aspect ratio */
+            border:2px solid black;
+            border-radius:15px;
+            animation:zoom 0.7s ease;
+        }
+
+        main h1{
+            text-align:center;
+            font-family:"Marcellus",serif;
+            font-size:55px;
+            margin-bottom:40px;
+            text-shadow:3px 3px 10px black;
+        }
+
+        main p{
+            font-size:24px;
+            max-width:1200px;
+            margin:20px auto;
+        }
+
+        ul{
+            max-width:1100px;
+            margin:30px auto;
+            padding-left:40px;
+            font-size:22px;
+        }
+
+        li{
+            margin-bottom:18px;
+        }
+
+        footer{
+            background:#1e4b22;
+            color:white;
+            text-align:center;
+            padding:18px;
+            margin-top:0px;
+            font-size:16px;
+            animation:fadein 1.3s ease;
+        }
+
+        @keyframes fadein{
+            from{ opacity:0; }
+            to{ opacity:1; }
+        }
+
+        @keyframes zoom{
+            from{ transform:scale(0.9); opacity:0; }
+            to{ transform:scale(1); opacity:1; }
+        }
+
+        /* Optional: mobile adjustments */
+        @media (max-width:600px){
+            main{
+                padding:30px 20px;
+            }
+
+            main h1{
+                font-size:40px;
+            }
+
+            main p, ul{
+                font-size:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="heading">Forest Conservation Campaign</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="importance.html">Importance</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sdg.html">Goals</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Why Forests Matter</h1>
+
+    <p>The Forest Conservation Campaign is all about protecting our nature and conserving all aspects of it for our future as well as for our next generations.</p>
+
+    <p>Forests play a crucial part in sustaining life on our planet. Around 1.6 billion people including more than 2,000 indigenous cultures depend on forests for their livelihoods, medicines, fuel, food and shelter. Forests are the most biologically diverse ecosystems on land, home to more than 80% of the terrestrial species of animals, plants and insects.</p>
+
+    <p>There has been a drastic fall in the total area covered by forests due to agricultural expansion, logging, mining, and development. Controlling deforestation is the need of the hour. We must contribute in protecting the forests. The government has implemented The Forest (Conservation) Act, 1980, for the same.</p>
+
+    <img class="mainimg" src="https://mines.rajasthan.gov.in/DMFT/images/about-pic2.jpg">
+
+    <p><b>The Forest Conservation Campaign focuses on:</b></p>
+
+    <ul>
+        <li><b>Plant trees:</b> Plant trees in your local area and encourage others to do the same.</li>
+        <li><b>Sustainable forestry:</b> Control logging to prevent overexploitation and ensure forest regeneration.</li>
+        <li><b>Legislation and enforcement:</b> Enforce strict laws against illegal logging and create protected areas.</li>
+        <li><b>Reduce consumption:</b> Minimize your use of paper and wood products. Choose sustainable options.</li>
+    </ul>
+
+</main>
+
+<footer>
+    &copy; 2025 Forest Conservation Campaign. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Forest Conservation Campaign</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family:"Nunito Sans", sans-serif;
+            background-image:url("https://southernforests.org/wp-content/uploads/2023/12/website-photos-10.png");
+            background-size:cover;
+            background-repeat:no-repeat;
+            position:relative;
+        }
+
+        body::before{
+            content:"";
+            position:fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background:rgba(0,0,0,0.45);
+            z-index:-1;
+        }
+
+        header{
+            background:#1e4b22;
+            color:white;
+            padding:15px 5px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .heading{
+            font-family:"Marcellus", serif;
+            font-size:5vh;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:20px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            background:white;
+            color:#1e4b22;
+            padding:6px 10px;
+            border-radius:4px;
+            transition:0.3s;
+        }
+
+        main{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:white;
+            font-family:"Marcellus", serif;
+            font-size:48px;
+            margin-bottom:20px;
+            text-shadow:2px 2px 5px black;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:auto auto;
+            grid-gap:10px;
+        }
+
+        .photo-box{
+            background:white;
+            border-radius:10px;
+            padding:10px;
+        }
+
+        .photo-box img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:8px;
+        }
+
+        .caption{
+            font-size:16px;
+            margin-top:8px;
+            text-align:center;
+            color:black;
+        }
+
+        footer{
+            background:#1e4b22;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="heading">Forest Conservation Campaign</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="importance.html">Importance</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sdg.html">Goals</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Gallery</h1>
+
+    <div class="gallery">
+        <div class="photo-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz2Xq41LFmd5ynSR_AZS1KU_jyeoToQHfruA&s">
+            <div class="caption">Deforestation Impact</div>
+        </div>
+
+        <div class="photo-box">
+            <img src="https://ius-sdb.com/wp-content/uploads/2023/07/IND-dbcPune-001-1.jpg">
+            <div class="caption">Tree Plantation Drive</div>
+        </div>
+
+        <div class="photo-box">
+            <img src="https://www.iawfonline.org/wp-content/uploads/2022/07/Q1-22-Ghana-Photo5-scaled.jpg">
+            <div class="caption">Forest Fire Awareness</div>
+        </div>
+
+        <div class="photo-box">
+            <img src="https://etedge-insights.com/wp-content/uploads/2023/10/shutterstock_1731631453-1.jpg">
+            <div class="caption">Biodiversity Protection</div>
+        </div>
+
+        <div class="photo-box">
+            <img src="https://img.freepik.com/free-photo/young-man-covering-base-hole-after-planting-small-tree-woods_482257-84589.jpg">
+            <div class="caption">Forest Cleanup Activity</div>
+        </div>
+
+        <div class="photo-box">
+            <img src="https://fondationfranklinia.org/wp-content/uploads/2020/10/Planting-1.jpg">
+            <div class="caption">Forest Restoration</div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    © 2025 Forest Conservation Campaign. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <title>SDG Goals - Forest Conservation Campaign</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "Nunito Sans", sans-serif;
+            background-image:url("https://southernforests.org/wp-content/uploads/2023/12/website-photos-10.png");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+        body::before{
+            content:'';
+            position:fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background:rgba(0,0,0,0.45);
+            backdrop-filter:brightness(0.7);
+            z-index:-1;
+        }
+
+        header{
+            background:#1e4b22;
+            color:white;
+            padding:8px 0;
+        }
+
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width:95%;
+            margin:auto;
+        }
+
+        .heading{
+            font-family:"Marcellus",serif;
+            font-size:5vh;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            margin-left:25px;
+            padding:6px 10px;
+        }
+
+        nav a:hover{
+            background:white;
+            color:#1e4b22;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        main{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            padding:25px;
+            background:rgba(0,0,0,0.5);
+            border-radius:12px;
+            transform: translateY(-35px);
+            opacity: 0;
+            animation: slideDown 0.9s ease-out forwards;
+        }
+
+        @keyframes slideDown {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        main h1{
+            font-size:50px;
+            font-family:"Marcellus",serif;
+            text-align:center;
+            color:white;
+            margin-bottom:20px;
+            text-shadow:2px 2px 5px black;
+        }
+
+        .desc{
+            font-size:22px;
+            color:white;
+            text-shadow:2px 2px 5px black;
+            max-width:900px;
+            margin:0 auto 30px auto;
+            text-align:center;
+        }
+
+        .subtopic{
+            padding:20px;
+            border-radius:12px;
+            margin-top:20px;
+        }
+
+        .subtopic h2{
+            font-family:"Marcellus",serif;
+            font-size:32px;
+            color:white;
+            text-shadow:2px 2px 5px black;
+            margin-bottom:15px;
+        }
+
+        .goals-list{
+            list-style:disc;
+            padding-left:20px;
+        }
+
+        .goals-list li{
+            margin-bottom:16px;
+            font-size:20px;
+            color:white;
+            text-shadow:2px 2px 5px black;
+        }
+
+        footer{
+            background:#1e4b22;
+            color:white;
+            text-align:center;
+            padding:18px;
+            margin-top:170px;
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="heading">Forest Conservation Campaign</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="importance.html">Importance</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sdg.html">Goals</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>SDG 15: Life on Land</h1>
+
+    <div class="desc">
+        Forests are the backbone of life on Earth. SDG 15 focuses on protecting, restoring,
+        and promoting sustainable use of forests while conserving biodiversity. Our mission
+        aligns with this global goal by inspiring action at local and global levels.
+    </div>
+
+    <div class="subtopic">
+        <h2>Forest Conservation Goals</h2>
+
+        <ul class="goals-list">
+            <li><b>Raising Awareness:</b> Educating people on the importance of forests and the dangers of deforestation.</li>
+            <li><b>Reducing Deforestation:</b> Encouraging eco-friendly alternatives, regulating logging, and reducing wood waste.</li>
+            <li><b>Afforestation & Reforestation:</b> Organizing plantation drives and restoring damaged forest land.</li>
+            <li><b>Community Participation:</b> Involving local communities, students, NGOs, and volunteers.</li>
+            <li><b>Protecting Habitats:</b> Conserving wildlife areas and safeguarding endangered species.</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    © 2025 Forest Conservation Campaign. All Rights Reserved.
+</footer>
+
+</body>
+</html>

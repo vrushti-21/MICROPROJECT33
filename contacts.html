@@ -1,0 +1,251 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <title>Contact Us - Forest Conservation Campaign</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family:"Nunito Sans", sans-serif;
+            background-image:url("https://southernforests.org/wp-content/uploads/2023/12/website-photos-10.png");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+        body::before{
+            content:''; 
+            position:fixed; 
+            width:100%; 
+            height:100%; 
+            top:0; 
+            left:0;
+            background:rgba(0,0,0,0.45); 
+            backdrop-filter:brightness(0.7); 
+            z-index:-1;
+        }
+
+        header{
+            background:#1e4b22;
+            color:white;
+            padding:8px 0;
+        }
+
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width:95%;
+            margin:auto;
+        }
+
+        .heading{
+            font-family:"Marcellus",serif;
+            font-size:5vh;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            margin-left:25px;
+            padding:6px 10px;
+        }
+
+        nav a:hover{
+            background:white;
+            color:#1e4b22;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        main{
+            width:90%;
+            max-width:900px;
+            margin:40px auto;
+            background:rgba(0,0,0,0.48);
+            padding:25px;
+            border-radius:12px;
+            opacity:0;
+            transform:translateY(30px);
+            animation:fadeUp 0.9s ease-out forwards;
+        }
+
+        @keyframes fadeUp{
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        h1{
+            font-size:48px;
+            font-family:"Marcellus",serif;
+            text-align:center;
+            color:white;
+            margin-bottom:25px;
+            text-shadow:2px 2px 5px black;
+        }
+
+        .text{
+            font-size:20px;
+            color:white;
+            text-shadow:2px 2px 5px black;
+            margin-bottom:12px;
+        }
+
+        .section-title{
+            font-size:32px;
+            font-family:"Marcellus",serif;
+            color:white;
+            text-shadow:2px 2px 5px black;
+            margin-top:25px;
+            margin-bottom:10px;
+        }
+
+        .social-links a{
+            text-decoration:none;
+            color:white;
+            font-size:22px;
+            margin-right:25px;
+            padding:5px 8px;
+            display:inline-flex;
+            align-items:center;
+        }
+
+        .social-links img{
+            width:22px;
+            height:22px;
+            margin-right:8px;
+        }
+
+        .social-links a:hover{
+            background:white;
+            color:#1e4b22;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        form{
+            margin-top:20px;
+            background:rgba(0,0,0,0.10);
+            padding:20px;
+            border-radius:10px;
+            border:1px solid white;
+        }
+
+        label{
+            font-size:18px;
+            color:white;
+            text-shadow:2px 2px 5px black;
+            margin-top:15px;
+            display:block;
+        }
+
+        input, textarea{
+            width:95%;
+            padding:12px;
+            margin-top:8px;
+            border:1px solid white;
+            border-radius:6px;
+            background:rgba(0,0,0,0.10);
+            color:white;
+            font-size:16px;
+        }
+
+        button{
+            margin-top:18px;
+            width:100%;
+            padding:14px;
+            background:#2ecc71;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:20px;
+        }
+
+        button:hover{
+            background:#25a95d;
+            transition:0.3s;
+        }
+
+        footer{
+            background:#1e4b22;
+            color:white;
+            text-align:center;
+            padding:18px;
+            margin-top:40px;
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="heading">Forest Conservation Campaign</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="importance.html">Importance</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sdg.html">Goals</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <h1>Contact Us</h1>
+
+    <h2 class="section-title">Campaign Team</h2>
+    <p class="text"><b>Email:</b> forestguardians@sustain.org</p>
+    <p class="text"><b>Phone:</b> +91 98765 3210</p>
+    <p class="text"><b>Address:</b> Forest Conservation Office, Green Valley Road, Maharashtra, India</p>
+
+    <h2 class="section-title">Follow Us</h2>
+    <div class="social-links">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">Instagram</a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">YouTube</a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">Facebook</a>
+    </div>
+
+    <h2 class="section-title">Send Us a Message</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text">
+        <label>Email:</label>
+        <input type="email">
+        <label>Message:</label>
+        <textarea rows="5"></textarea>
+        <button type="button" id="submit" onclick="submitClick()">Submit</button>
+        <p id="msg" style="color:white; font-size:18px; margin-top:10px;"></p>
+    </form>
+
+</main>
+
+<footer>
+    © 2025 Forest Conservation Campaign. All Rights Reserved.
+</footer>
+
+<script>
+function submitClick(){
+    document.getElementById('msg').innerHTML = "Message Sent Successfully!";
+    document.getElementById('submit').style.background = "#ffffff";
+    document.getElementById('submit').style.color = "#2ecc71";
+    document.getElementById('submit').disabled = true;
+}
+</script>
+
+</body>
+</html>
